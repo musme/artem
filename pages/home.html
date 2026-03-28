@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет — Твой VPS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&subset=cyrillic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[#f0f2f5] font-['Manrope',sans-serif] min-h-screen flex flex-col items-center pt-8 pb-12 px-4"
+  >
+    <div class="w-full max-w-[850px] flex flex-col gap-6">
+      <!-- Header -->
+      <div class="flex items-center justify-between py-1">
+        <p class="text-[28px] font-medium text-[#020202] leading-[22px]">
+          Твой <span class="text-[#f40]">VPS</span>
+        </p>
+        <button class="px-2 py-1.5 rounded-lg cursor-pointer">
+          <p class="text-xl font-medium text-[#020202] leading-[22px]">
+            Профиль
+          </p>
+        </button>
+      </div>
+
+      <!-- Card: Тариф -->
+      <div
+        class="bg-white rounded-[4px] shadow-[1px_1px_5px_0px_rgba(0,0,0,0.1)] p-6 flex flex-col"
+      >
+        <div class="flex items-center gap-[11px] py-2">
+          <p class="text-xl font-medium text-[#f40]">Подписка оплачена</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-4 py-2">
+          <p class="text-[30px] font-bold text-[#020202] leading-[22px]">
+            Тариф "Годовой"
+          </p>
+          <p
+            class="text-base font-semibold text-[rgba(2,2,2,0.5)] tracking-[0.64px] leading-[1.32]"
+          >
+            Следующее списание 12 мая 2024
+          </p>
+        </div>
+        <div class="flex items-center gap-[11px] py-2">
+          <p
+            class="text-base font-semibold text-[#020202] tracking-[0.64px] leading-[1.32]"
+          >
+            Доуступ к личному VPS серверу
+          </p>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-start pt-5"
+        >
+          <button
+            class="w-full sm:w-auto sm:min-w-[230px] h-[45px] flex items-center justify-center rounded-lg bg-[#020202] border border-[#020202] text-[#f3f4f6] text-base font-medium leading-6 cursor-pointer shadow-[2px_2px_10px_0px_rgba(0,0,0,0.05)] hover:bg-white hover:text-[#010101] transition-all duration-200"
+          >
+            Изменить тариф
+          </button>
+          <button
+            class="w-full sm:w-auto sm:min-w-[230px] h-[45px] flex items-center justify-center rounded-lg bg-white border border-[rgba(2,2,2,0.7)] text-base font-medium text-[rgba(2,2,2,0.7)] leading-6 cursor-pointer hover:border-[#020202] hover:text-[#020202] transition-all duration-200"
+          >
+            Отменить подписку
+          </button>
+        </div>
+      </div>
+
+      <!-- Card: Как пользоваться -->
+      <div
+        class="bg-white rounded-[4px] shadow-[1px_1px_5px_0px_rgba(0,0,0,0.1)] p-6 flex flex-col"
+      >
+        <div class="flex items-center py-2">
+          <p class="text-[30px] font-bold text-[#020202] leading-[22px]">
+            Как пользоваться
+          </p>
+        </div>
+        <div class="flex items-start pt-6 pr-4">
+          <p
+            class="text-base font-semibold text-[#020202] tracking-[0.64px] leading-[1.32]"
+          >
+            Установите приложение и начните пользоваться через минуту
+          </p>
+        </div>
+        <div class="flex flex-col gap-1">
+          <p
+            class="text-base font-semibold text-[#4f46e5] tracking-[0.64px] leading-[1.32]"
+          >
+            Ссылка для активации подписки
+          </p>
+          <div class="flex items-center gap-3">
+            <p
+              class="text-base font-semibold text-[rgba(2,2,2,0.5)] tracking-[0.64px] leading-[1.32] break-all"
+            >
+              https://chatgpt.com/c/69c0f2ce-9b98-8387-86cb-3225245b96fa
+            </p>
+            <button
+              class="cursor-pointer shrink-0 p-2 rounded-full"
+              title="Копировать"
+            >
+              <svg
+                class="w-6 h-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20 6V21H8V6H20ZM18 8H10V19H18V8ZM15 2V4H6V16H4V2H15Z"
+                  fill="#020202"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Кнопки скачивания -->
+        <div
+          class="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center pt-5"
+        >
+          <button
+            class="w-full sm:w-auto sm:min-w-[230px] h-[45px] flex items-center px-3 gap-3 rounded-lg bg-white border border-[rgba(2,2,2,0.5)] text-base font-medium text-[rgba(2,2,2,0.7)] leading-6 cursor-pointer hover:bg-[rgba(2,2,2,0.5)] hover:text-white transition-all duration-200"
+          >
+            <svg
+              class="w-[18px] h-[18px] shrink-0"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_ios)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.7634 2.87358C12.4196 2.11309 12.8619 1.05388 12.7408 0C11.7953 0.036 10.6513 0.604032 9.97329 1.36362C9.36444 2.03771 8.83296 3.11481 8.97584 4.148C10.0306 4.22629 11.1072 3.63497 11.7634 2.87358ZM14.1287 9.5625C14.1551 12.2868 16.6223 13.193 16.6496 13.2047C16.6296 13.2686 16.2555 14.496 15.35 15.7649C14.5664 16.8611 13.7537 17.9529 12.4733 17.9763C11.2155 17.9988 10.8106 17.2617 9.37173 17.2617C7.9338 17.2617 7.48423 17.9528 6.29385 17.9987C5.05796 18.0428 4.11603 16.8127 3.327 15.7201C1.71252 13.4854 0.479368 9.40508 2.13571 6.65112C2.95842 5.28404 4.42819 4.41701 6.02446 4.39541C7.23759 4.37291 8.38338 5.17764 9.1251 5.17764C9.86681 5.17764 11.2592 4.21014 12.7226 4.35234C13.3351 4.37664 15.0552 4.58897 16.1591 6.13784C16.0699 6.19094 14.1069 7.28554 14.1287 9.5625Z"
+                  fill="currentColor"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_ios">
+                  <rect width="18" height="18" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            Скачать для IOS
+          </button>
+          <button
+            class="w-full sm:w-auto sm:min-w-[230px] h-[45px] flex items-center px-3 gap-3 rounded-lg bg-white border border-[rgba(2,2,2,0.54)] text-base font-medium text-[rgba(2,2,2,0.7)] leading-6 cursor-pointer hover:bg-[rgba(2,2,2,0.5)] hover:text-white transition-all duration-200"
+          >
+            <svg
+              class="w-[18px] h-[18px] shrink-0"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.56172 8.15625L11.9242 5.625L2.75547 0.675C2.69922 0.61875 2.58672 0.61875 2.41797 0.5625L9.56172 8.15625Z"
+                fill="currentColor"
+              />
+              <path
+                d="M12.9367 11.8125L16.2555 10.0125C16.6492 9.7875 16.8742 9.45 16.8742 9C16.8742 8.55 16.6492 8.15625 16.2555 7.9875L12.9367 6.1875L10.293 9L12.9367 11.8125Z"
+                fill="currentColor"
+              />
+              <path
+                d="M1.35 1.06836C1.18125 1.23711 1.125 1.46211 1.125 1.68711V16.3121C1.125 16.5371 1.18125 16.7621 1.35 16.9871L8.775 8.99961L1.35 1.06836Z"
+                fill="currentColor"
+              />
+              <path
+                d="M9.56172 9.84375L2.41797 17.4375C2.53047 17.4375 2.64297 17.3812 2.75547 17.325L11.9242 12.375L9.56172 9.84375Z"
+                fill="currentColor"
+              />
+            </svg>
+            Скачать для ANDROID
+          </button>
+          <button
+            class="w-full sm:w-auto sm:min-w-[230px] h-[45px] flex items-center px-3 gap-3 rounded-lg bg-white border border-[rgba(2,2,2,0.5)] text-base font-medium text-[rgba(2,2,2,0.7)] leading-6 cursor-pointer hover:bg-[rgba(2,2,2,0.5)] hover:text-white transition-all duration-200"
+          >
+            <svg
+              class="w-[18px] h-[18px] shrink-0"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_win)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.23128 9.39067C8.23579 11.1897 8.2412 14.2463 8.24571 16.6219C11.4983 17.0617 14.751 17.5152 17.9982 18C17.9982 15.1639 18.0018 12.3401 17.9982 9.6416C14.7429 9.6416 11.4884 9.39067 8.23128 9.39067ZM0 9.39155V15.4995C2.45323 15.8305 4.90647 16.1469 7.35519 16.5085C7.3597 14.1455 7.35338 11.7818 7.35338 9.4188C4.90196 9.4233 2.45143 9.38346 0 9.39155ZM0 2.55894V8.64976C2.45323 8.65606 4.90647 8.61893 7.3597 8.62163C7.35789 6.26403 7.35789 3.90931 7.35519 1.55171C4.90015 1.85844 2.44511 2.18294 0 2.55894ZM18 8.52451C14.7492 8.5371 11.4983 8.58668 8.24571 8.59658C8.24391 6.2003 8.24391 3.80688 8.24571 1.4124C11.492 0.916772 14.7456 0.450648 17.9982 0C18 2.84243 17.9982 5.68208 18 8.52451Z"
+                  fill="currentColor"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_win">
+                  <rect width="18" height="18" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            Скачать для WINDOWS
+          </button>
+        </div>
+      </div>
+
+      <!-- Card: История платежей -->
+      <div
+        class="bg-white rounded-[4px] shadow-[1px_1px_5px_0px_rgba(0,0,0,0.1)] p-6 flex flex-col"
+      >
+        <div class="flex items-center py-2">
+          <p class="text-[30px] font-bold text-[#020202] leading-[22px]">
+            История платежей
+          </p>
+        </div>
+        <div class="overflow-x-auto pt-3">
+          <table class="w-full min-w-[600px]">
+            <tbody>
+              <tr>
+                <td
+                  class="py-[5px] pr-8 text-base font-semibold text-[rgba(2,2,2,0.5)] tracking-[0.64px] leading-[1.32] whitespace-nowrap"
+                >
+                  12 апреля 2025
+                </td>
+                <td
+                  class="py-[5px] pr-8 text-base font-semibold text-[rgba(2,2,2,0.5)] tracking-[0.64px] leading-[1.32] whitespace-nowrap"
+                >
+                  -
+                </td>
+                <td
+                  class="py-[5px] pr-8 text-base font-semibold text-[rgba(2,2,2,0.5)] tracking-[0.64px] leading-[1.32] whitespace-nowrap"
+                >
+                  150
+                </td>
+                <td
+                  class="py-[5px] pr-8 text-base font-semibold text-[#444] tracking-[0.64px] leading-[1.32] whitespace-nowrap"
+                >
+                  Скачать чек
+                </td>
+                <td
+                  class="py-[5px] text-base font-semibold text-[#020202] tracking-[0.64px] leading-[1.32] whitespace-nowrap"
+                >
+                  Детали &gt;
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="py-[5px] pr-8 text-base font-semibold text-[rgba(2,2,2,0.5)] tracking-[0.64px] leading-[1.32] whitespace-nowrap"
+                >
+                  12 апреля 2025
+                </td>
+                <td
+                  class="py-[5px] pr-8 text-base font-semibold text-[rgba(2,2,2,0.5)] tracking-[0.64px] leading-[1.32] whitespace-nowrap"
+                >
+                  -
+                </td>
+                <td
+                  class="py-[5px] pr-8 text-base font-semibold text-[rgba(2,2,2,0.5)] tracking-[0.64px] leading-[1.32] whitespace-nowrap"
+                >
+                  150
+                </td>
+                <td
+                  class="py-[5px] pr-8 text-base font-semibold text-[#444] tracking-[0.64px] leading-[1.32] whitespace-nowrap"
+                >
+                  Скачать чек
+                </td>
+                <td
+                  class="py-[5px] text-base font-semibold text-[#020202] tracking-[0.64px] leading-[1.32] whitespace-nowrap"
+                >
+                  Детали &gt;
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="flex items-start pt-6 pb-3">
+          <a
+            href="/pages/payments.html"
+            class="w-full sm:w-auto sm:min-w-[230px] h-[45px] flex items-center justify-center px-[23px] py-[13px] rounded-lg bg-white border border-[rgba(2,2,2,0.54)] text-base font-medium text-[rgba(2,2,2,0.7)] leading-6 cursor-pointer hover:border-[#020202] hover:text-[#020202] transition-all duration-200"
+          >
+            Показать все
+          </a>
+        </div>
+      </div>
+
+      <!-- Card: Нужна помощь? -->
+      <div
+        class="bg-white rounded-[4px] shadow-[1px_1px_5px_0px_rgba(0,0,0,0.1)] p-6 flex flex-col"
+      >
+        <div class="flex items-center py-2">
+          <p class="text-[30px] font-bold text-[#020202] leading-[22px]">
+            Нужна помощь?
+          </p>
+        </div>
+        <div class="flex items-start pt-6 pr-4">
+          <p
+            class="text-base font-semibold text-[#020202] tracking-[0.64px] leading-[1.32]"
+          >
+            Свяжитесь с нами, мы всегда рады помочь!
+          </p>
+        </div>
+        <div class="flex items-start pt-6 pb-3">
+          <button
+            class="w-full sm:w-auto sm:min-w-[230px] h-[45px] flex items-center justify-center px-[23px] py-[13px] rounded-lg bg-white border border-[rgba(2,2,2,0.54)] text-base font-medium text-[rgba(2,2,2,0.7)] leading-6 cursor-pointer hover:border-[#020202] hover:text-[#020202] transition-all duration-200"
+          >
+            Чат с техподдержкой
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
