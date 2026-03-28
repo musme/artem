@@ -17,3 +17,4 @@
 - [Главная](https://musme.github.io/artem/pages/home.html) — тариф, инструкция, история платежей, поддержка
 - [Выбор тарифа](https://musme.github.io/artem/pages/select-plan.html) — карточки тарифов с анимацией при наведении
 - [История платежей](https://musme.github.io/artem/pages/payments.html) — полный список платежей
+- [Профиль](https://musme.github.io/artem/pages/profile.html) — боковая панель редактирования профиля
