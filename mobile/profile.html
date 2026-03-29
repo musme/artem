@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Профиль — Твой VPS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&subset=cyrillic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[#f0f2f5] font-['Manrope',sans-serif] min-h-screen flex justify-center"
+  >
+    <div class="w-full max-w-[400px] flex flex-col gap-4 px-4 pt-4">
+      <!-- Header: Назад + Профиль -->
+      <div class="flex items-center px-2 py-1.5 rounded-lg">
+        <a
+          href="/artem/mobile/home.html"
+          class="shrink-0 cursor-pointer no-underline"
+        >
+          <svg
+            class="w-5 h-5"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.125 15.833L7.29167 10L13.125 4.16667"
+              stroke="#010101"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <p
+          class="flex-1 text-base font-medium text-[#010101] text-center leading-[22px]"
+        >
+          Профиль
+        </p>
+        <div class="w-5"></div>
+      </div>
+
+      <!-- Card: Профиль -->
+      <div
+        class="bg-white rounded-lg shadow-[1px_1px_5px_0px_rgba(0,0,0,0.05)] pt-6 px-6 pb-px flex flex-col"
+      >
+        <div class="flex items-start py-3">
+          <p
+            class="text-sm font-semibold text-[rgba(2,2,2,0.5)] tracking-[0.56px] leading-[1.32]"
+          >
+            Хотите изменить данные?
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-3 pb-6">
+          <!-- Name input -->
+          <div
+            class="group w-full flex items-center h-[59px] shadow-[inset_0_0_0_1px_rgba(2,2,2,0.5)] [&:hover:not(:focus-within)]:shadow-[inset_0_0_0_1.2px_#020202] focus-within:shadow-[inset_0_0_0_1px_rgba(2,2,2,0.5)] rounded-lg px-3.5 py-4 bg-white transition-shadow duration-200"
+          >
+            <div class="flex items-center gap-[15px] flex-1">
+              <svg
+                class="w-5 h-5 shrink-0 text-[rgba(2,2,2,0.5)] group-[&:hover:not(:focus-within)]:text-[#020202] group-focus-within:text-[rgba(2,2,2,0.7)] transition-colors duration-200"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.3416 9.55892C14.3416 11.1203 13.5069 12.4884 12.2542 13.2463C12.0716 13.3568 11.9712 13.5636 11.9979 13.7744C12.0246 13.9851 12.1733 14.1608 12.3779 14.2228C14.1658 14.7645 15.6926 15.9014 16.7244 17.4007C14.9484 19.0154 12.5894 20 10 20C7.41042 20 5.05079 19.0156 3.27474 17.4007C4.30665 15.9012 5.83409 14.7645 7.62207 14.2228L7.46419 13.7069L7.74577 13.2463C6.49309 12.4884 5.6584 11.1203 5.65837 9.55892C5.65837 7.17652 7.60221 5.24497 10 5.24495C12.3977 5.24495 14.3416 7.17651 14.3416 9.55892ZM7.46419 13.7069L7.62207 14.2228C7.82662 14.1608 7.97531 13.9851 8.00212 13.7744C8.02874 13.5636 7.9284 13.3568 7.74577 13.2463L7.46419 13.7069Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M15.4272 9.55892C15.4272 6.58092 12.9972 4.16667 10 4.16667C7.00278 4.16668 4.57275 6.58093 4.57275 9.55892C4.57278 11.1375 5.25655 12.5569 6.34359 13.5425C4.79964 14.2054 3.47421 15.2753 2.50407 16.6162C0.946611 14.853 0 12.5375 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 12.5377 19.0528 14.853 17.4951 16.6162C16.5249 15.2753 15.1997 14.2053 13.6556 13.5425C14.7429 12.5568 15.4272 11.1378 15.4272 9.55892Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <input
+                type="text"
+                value="Александр"
+                class="flex-1 text-xl text-[#020202] group-[&:hover:not(:focus-within)]:text-[#020202] group-focus-within:text-[rgba(2,2,2,0.7)] font-normal outline-none bg-transparent transition-colors duration-200"
+              />
+            </div>
+          </div>
+
+          <!-- Email input -->
+          <div
+            class="group w-full flex items-center h-[55px] shadow-[inset_0_0_0_1px_#c8b3a3] [&:hover:not(:focus-within)]:shadow-[inset_0_0_0_1.2px_#020202] focus-within:shadow-[inset_0_0_0_1px_#c8b3a3] rounded-lg px-3.5 py-4 bg-white transition-shadow duration-200"
+          >
+            <div class="flex items-center gap-[15px] flex-1">
+              <svg
+                class="w-5 h-4 shrink-0 text-[rgba(2,2,2,0.5)] group-[&:hover:not(:focus-within)]:text-[#020202] group-focus-within:text-[rgba(2,2,2,0.7)] transition-colors duration-200"
+                viewBox="0 0 20 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 0H17C18.6569 0 20 1.34315 20 3V13C20 14.6569 18.6569 16 17 16H3C1.34315 16 0 14.6569 0 13V3C0 1.34315 1.34315 0 3 0ZM10.5 6.47L17 2H3L9.5 6.47C9.8094 6.64863 10.1906 6.64863 10.5 6.47Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <input
+                type="email"
+                value="aleksandr@gmail.com"
+                class="flex-1 text-xl text-[#020202] group-[&:hover:not(:focus-within)]:text-[#020202] group-focus-within:text-[rgba(2,2,2,0.7)] font-normal outline-none bg-transparent transition-colors duration-200"
+              />
+            </div>
+          </div>
+
+          <!-- Применить -->
+          <button
+            class="w-full h-[45px] flex items-center justify-center rounded-lg bg-[#020202] border border-[#020202] text-[#f3f4f6] text-base font-medium leading-6 cursor-pointer shadow-[2px_2px_10px_0px_rgba(0,0,0,0.05)] hover:bg-white hover:text-[#010101] transition-all duration-200"
+          >
+            Применить
+          </button>
+        </div>
+      </div>
+
+      <!-- Выйти из акаунта -->
+      <a
+        href="/artem/index.html"
+        class="bg-white rounded-lg shadow-[1px_1px_10px_0px_rgba(0,0,0,0.05)] w-full flex items-center gap-3 px-6 py-4 cursor-pointer no-underline"
+      >
+        <svg
+          class="w-6 h-6 shrink-0"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_logout)">
+            <path
+              d="M9.69306 22.3846V21C9.69306 20.6308 9.36998 20.3077 9.00075 20.3077H4.38537C4.01614 20.3077 3.69306 19.9846 3.69306 19.6154V4.38463C3.69306 4.0154 4.01614 3.69233 4.38537 3.69233H9.00075C9.36998 3.69233 9.69306 3.36925 9.69306 3.00002V1.6154C9.69306 1.24617 9.36998 0.923096 9.00075 0.923096H2.76998C1.7546 0.923096 0.923828 1.75386 0.923828 2.76925V21.2308C0.923828 22.2462 1.7546 23.0769 2.76998 23.0769H9.00075C9.36998 23.0769 9.69306 22.7539 9.69306 22.3846Z"
+              fill="#020202"
+              fill-opacity="0.5"
+            />
+            <path
+              d="M22.8917 12.4615C23.1686 12.1846 23.1686 11.7692 22.8917 11.4923L16.6609 5.26153C16.384 4.9846 15.9686 4.9846 15.6917 5.26153L14.7225 6.23076C14.4456 6.50768 14.4456 6.92306 14.7225 7.19999L17.3071 9.7846C17.584 10.0615 17.3994 10.5692 16.984 10.5692H7.15325C6.78401 10.5692 6.46094 10.8461 6.46094 11.2154V12.6C6.46094 12.9692 6.78401 13.3384 7.15325 13.3384H16.9379C17.3532 13.3384 17.5379 13.8461 17.2609 14.1231L14.6763 16.7077C14.3994 16.9846 14.3994 17.4 14.6763 17.6769L15.6456 18.6461C15.9225 18.9231 16.3379 18.9231 16.6148 18.6461L22.8917 12.4615Z"
+              fill="#020202"
+              fill-opacity="0.5"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_logout">
+              <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <span class="text-base font-medium text-[#010101]"
+          >Выйти из акаунта</span
+        >
+      </a>
+    </div>
+  </body>
+</html>

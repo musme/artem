@@ -22,3 +22,5 @@
 ### Мобильная версия
 
 - [Главная](https://musme.github.io/artem/mobile/home.html) — тариф, инструкция, история платежей, поддержка
+
+- [Профиль](https://musme.github.io/artem/mobile/profile.html)
