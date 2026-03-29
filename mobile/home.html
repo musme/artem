@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет — Твой VPS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&subset=cyrillic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[#f0f2f5] font-['Manrope',sans-serif] min-h-screen flex justify-center"
+  >
+    <div class="w-full max-w-[400px] flex flex-col gap-4 px-4 pt-4">
+      <!-- Header -->
+      <div class="py-0.5 flex items-center justify-between">
+        <p class="text-base font-bold text-[#010101]">Твой VPS</p>
+      </div>
+
+      <!-- Card: Тариф -->
+      <div
+        class="bg-white rounded-lg shadow-[1px_1px_5px_0px_rgba(0,0,0,0.05)] pt-6 px-6 flex flex-col"
+      >
+        <div class="flex items-center py-2 h-[33px]">
+          <p class="text-sm font-medium text-[#f40]">Подписка активна</p>
+        </div>
+        <div class="flex items-end py-0.5">
+          <p class="text-[30px] font-bold text-[#020202] leading-[30px]">
+            Тариф "Годовой"
+          </p>
+        </div>
+        <div class="flex items-start py-2.5">
+          <p
+            class="text-sm font-semibold text-[rgba(2,2,2,0.5)] tracking-[0.56px] leading-[1.32]"
+          >
+            Следующее списание 12 мая 2024
+          </p>
+        </div>
+        <div class="flex flex-col gap-4 pt-[28px] pb-5">
+          <!-- Изменить тариф: hover Variant3→Variant2 (black → white bg, white → black text) -->
+          <button
+            class="w-full h-[45px] flex items-center justify-center rounded-lg bg-[#020202] border border-[#020202] text-[#f3f4f6] text-base font-medium leading-6 cursor-pointer shadow-[2px_2px_10px_0px_rgba(0,0,0,0.05)] hover:bg-white hover:text-[#010101] transition-all duration-200"
+          >
+            Изменить тариф
+          </button>
+          <!-- Отменить подписку: hover Default→Variant2 (white → dark bg, dark text → white) -->
+          <button
+            class="w-full mx-auto h-[45px] flex items-center justify-center rounded-lg bg-white border border-[rgba(2,2,2,0.7)] text-base font-medium text-[rgba(2,2,2,0.7)] leading-6 cursor-pointer hover:bg-[rgba(2,2,2,0.5)] hover:text-white transition-all duration-200"
+          >
+            Отменить подписку
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu: Начать пользоваться -->
+      <a
+        class="group bg-white rounded-lg shadow-[0px_2px_2px_0px_rgba(0,0,0,0.05)] hover:shadow-none w-full h-[58px] flex items-center justify-between px-[23px] cursor-pointer no-underline transition-all duration-200"
+      >
+        <div class="flex items-center gap-3">
+          <div class="w-9 flex items-center justify-center">
+            <svg
+              class="w-6 h-6 shrink-0 text-[rgba(2,2,2,0.7)] group-hover:text-[#020202] transition-colors duration-200"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.04102 3.46875C5.554 3.73235 6.23962 4.14449 7.32129 4.80371L16.8281 10.5977C17.6939 11.1253 18.2647 11.4779 18.6709 11.7559C18.2647 12.0338 17.6939 12.3864 16.8281 12.9141L7.32129 18.708C6.23986 19.3671 5.55395 19.7784 5.04102 20.042C5.00499 19.4932 5 18.7326 5 17.5498V5.96191L5.00781 4.30762C5.01337 3.97794 5.02555 3.70395 5.04102 3.46875Z"
+                stroke="currentColor"
+                stroke-opacity="1"
+                stroke-width="6"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <p
+            class="text-base font-medium text-[rgba(2,2,2,0.7)] group-hover:text-[#020202] group-hover:text-[17px] transition-all duration-200"
+          >
+            Начать пользоваться
+          </p>
+        </div>
+        <svg
+          class="w-2 h-4 shrink-0 text-[rgba(2,2,2,0.3)] group-hover:text-[#020202] transition-colors duration-200"
+          viewBox="0 0 8 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 1L7 8L1 15"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+
+      <!-- Menu: Платежи -->
+      <a
+        class="group bg-white rounded-lg shadow-[0px_2px_2px_0px_rgba(0,0,0,0.05)] hover:shadow-none w-full h-[58px] flex items-center justify-between px-[23px] cursor-pointer no-underline transition-all duration-200"
+      >
+        <div class="flex items-center gap-3">
+          <div class="w-9 flex items-center justify-center">
+            <svg
+              class="w-6 h-[19px] shrink-0 text-[rgba(2,2,2,0.7)] group-hover:text-[#020202] transition-colors duration-200"
+              viewBox="0 0 24 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 4.75C0 2.12665 2.14903 0 4.8 0H19.2C21.8509 0 24 2.12665 24 4.75V5.34375C24 5.67167 23.7313 5.9375 23.4 5.9375H0.6C0.268632 5.9375 0 5.67167 0 5.34375V4.75ZM0.6 8.3125C0.268632 8.3125 0 8.57838 0 8.90625V14.25C0 16.8733 2.14903 19 4.8 19H19.2C21.8509 19 24 16.8733 24 14.25V8.90625C24 8.57838 23.7313 8.3125 23.4 8.3125H0.6ZM13.2 13.0625C13.2 12.4066 13.7372 11.875 14.4 11.875H18C18.6628 11.875 19.2 12.4066 19.2 13.0625C19.2 13.7184 18.6628 14.25 18 14.25H14.4C13.7372 14.25 13.2 13.7184 13.2 13.0625Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <p
+            class="text-base font-medium text-[rgba(2,2,2,0.7)] group-hover:text-[#020202] group-hover:text-[17px] transition-all duration-200"
+          >
+            Платежи
+          </p>
+        </div>
+        <svg
+          class="w-2 h-4 shrink-0 text-[rgba(2,2,2,0.3)] group-hover:text-[#020202] transition-colors duration-200"
+          viewBox="0 0 8 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 1L7 8L1 15"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+
+      <!-- Menu: Поддержка -->
+      <a
+        class="group bg-white rounded-lg shadow-[0px_2px_2px_0px_rgba(0,0,0,0.05)] hover:shadow-none w-full h-[58px] flex items-center justify-between px-[23px] cursor-pointer no-underline transition-all duration-200"
+      >
+        <div class="flex items-center gap-3">
+          <div class="w-9 flex items-center justify-center">
+            <svg
+              class="w-6 h-6 shrink-0 text-[rgba(2,2,2,0.7)] group-hover:text-[#020202] transition-colors duration-200"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 13.9196 0.450744 15.7339 1.25215 17.343C1.46513 17.7706 1.53601 18.2593 1.41254 18.7207L0.697812 21.392C0.38754 22.5516 1.44841 23.6124 2.60802 23.3022L5.27927 22.5875C5.74072 22.464 6.22945 22.5349 6.65704 22.7478C8.26604 23.5493 10.0804 24 12 24ZM7.2 13.5C6.70295 13.5 6.3 13.903 6.3 14.4C6.3 14.897 6.70295 15.3 7.2 15.3H13.8C14.297 15.3 14.7 14.897 14.7 14.4C14.7 13.903 14.297 13.5 13.8 13.5H7.2ZM6.3 10.2C6.3 9.70296 6.70295 9.3 7.2 9.3H16.8C17.297 9.3 17.7 9.70296 17.7 10.2C17.7 10.697 17.297 11.1 16.8 11.1H7.2C6.70295 11.1 6.3 10.697 6.3 10.2Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <p
+            class="text-base font-medium text-[rgba(2,2,2,0.7)] group-hover:text-[#020202] group-hover:text-[17px] transition-all duration-200"
+          >
+            Поддержка
+          </p>
+        </div>
+        <svg
+          class="w-2 h-4 shrink-0 text-[rgba(2,2,2,0.3)] group-hover:text-[#020202] transition-colors duration-200"
+          viewBox="0 0 8 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 1L7 8L1 15"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+
+      <!-- Menu: Профиль -->
+      <a
+        class="group bg-white rounded-lg shadow-[0px_2px_2px_0px_rgba(0,0,0,0.05)] hover:shadow-none w-full h-[58px] flex items-center justify-between px-[23px] cursor-pointer no-underline transition-all duration-200"
+      >
+        <div class="flex items-center gap-3">
+          <div class="w-9 flex items-center justify-center">
+            <svg
+              class="w-6 h-6 shrink-0 text-[rgba(2,2,2,0.7)] group-hover:text-[#020202] transition-colors duration-200"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M17.21 11.4707C17.2099 13.3443 16.2083 14.9861 14.7051 15.8955C14.4859 16.0281 14.3654 16.2764 14.3975 16.5293C14.4295 16.7822 14.608 16.993 14.8535 17.0674C16.9989 17.7174 18.8311 19.0817 20.0693 20.8809C17.9381 22.8185 15.1072 24 12 24C8.8925 24 6.06095 22.8187 3.92969 20.8809C5.16798 19.0815 7.00091 17.7174 9.14648 17.0674L8.95703 16.4482L9.29492 15.8955C7.79171 14.9861 6.79008 13.3444 6.79004 11.4707C6.79004 8.61183 9.12266 6.29397 12 6.29395C14.8773 6.29395 17.21 8.61182 17.21 11.4707ZM8.95703 16.4482L9.14648 17.0674C9.39194 16.993 9.57037 16.7822 9.60254 16.5293C9.63449 16.2764 9.51408 16.0281 9.29492 15.8955L8.95703 16.4482Z"
+                fill="currentColor"
+              />
+              <path
+                d="M18.5127 11.4707C18.5127 7.8971 15.5966 5 12 5C8.40334 5.00002 5.4873 7.89711 5.4873 11.4707C5.48734 13.3651 6.30786 15.0682 7.6123 16.251C5.75957 17.0465 4.16906 18.3303 3.00488 19.9395C1.13593 17.8236 0 15.045 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 15.0453 22.8633 17.8236 20.9941 19.9395C19.8298 18.3303 18.2396 17.0464 16.3867 16.251C17.6915 15.0682 18.5127 13.3653 18.5127 11.4707Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <p
+            class="text-base font-medium text-[rgba(2,2,2,0.7)] group-hover:text-[#020202] group-hover:text-[17px] transition-all duration-200"
+          >
+            Профиль
+          </p>
+        </div>
+        <svg
+          class="w-2 h-4 shrink-0 text-[rgba(2,2,2,0.3)] group-hover:text-[#020202] transition-colors duration-200"
+          viewBox="0 0 8 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 1L7 8L1 15"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+    </div>
+  </body>
+</html>
