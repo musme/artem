@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тарифы — Твой VPS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&subset=cyrillic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[#f0f2f5] font-['Manrope',sans-serif] min-h-screen flex justify-center"
+  >
+    <div class="w-full max-w-[400px] flex flex-col gap-4 px-4 pt-4">
+      <!-- Header: Назад + Тарифы -->
+      <div class="flex items-center px-2 py-1.5 rounded-lg">
+        <a
+          href="/artem/mobile/home.html"
+          class="shrink-0 cursor-pointer no-underline"
+        >
+          <svg
+            class="w-5 h-5"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.125 15.833L7.29167 10L13.125 4.16667"
+              stroke="#010101"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <p
+          class="flex-1 text-base font-medium text-[#010101] text-center leading-[22px]"
+        >
+          Тарифы
+        </p>
+        <div class="w-5"></div>
+      </div>
+
+      <!-- Card: Простой -->
+      <div
+        class="bg-white rounded-lg shadow-[2px_2px_5px_0px_rgba(0,0,0,0.05)] p-6 flex flex-col gap-3"
+      >
+        <div class="flex items-center flex-col gap-3 pt-3">
+          <p class="text-[28px] font-bold text-[#020202] leading-[28px]">
+            "Простой"
+          </p>
+          <p class="text-[17px] font-bold text-[#020202] leading-[22px]">
+            200 ₽ / 1 месяц
+          </p>
+        </div>
+        <button
+          class="w-full h-[45px] flex items-center justify-center rounded-lg bg-white border border-[rgba(2,2,2,0.7)] text-base font-medium text-[rgba(2,2,2,0.7)] leading-6 cursor-pointer hover:bg-[rgba(2,2,2,0.5)] hover:text-white transition-all duration-200"
+        >
+          Выбрать подписку
+        </button>
+      </div>
+
+      <!-- Card: Удобный -->
+      <div
+        class="bg-white rounded-lg shadow-[2px_2px_5px_0px_rgba(0,0,0,0.05)] p-6 flex flex-col gap-3"
+      >
+        <div class="flex items-center flex-col gap-3 pt-3">
+          <p class="text-[28px] font-bold text-[#020202] leading-[28px]">
+            "Удобный"
+          </p>
+          <div class="flex flex-col gap-1">
+            <p class="text-[17px] font-bold text-[#020202] leading-none">
+              510 ₽ / 3 месяцев
+            </p>
+            <p
+              class="text-[17px] font-normal text-[rgba(2,2,2,0.5)] leading-none"
+            >
+              170р. в месяц
+            </p>
+          </div>
+        </div>
+        <button
+          class="w-full h-[45px] flex items-center justify-center rounded-lg bg-white border border-[rgba(2,2,2,0.7)] text-base font-medium text-[rgba(2,2,2,0.7)] leading-6 cursor-pointer hover:bg-[rgba(2,2,2,0.5)] hover:text-white transition-all duration-200"
+        >
+          Выбрать подписку
+        </button>
+      </div>
+
+      <!-- Card: Выгодный (активный, оранжевая рамка) -->
+      <div
+        class="bg-white rounded-lg border border-[#f40] shadow-[1px_1px_5px_0px_rgba(0,0,0,0.05)] p-6 flex flex-col gap-3"
+      >
+        <div class="flex items-center flex-col gap-3 pt-3">
+          <p class="text-[28px] font-bold text-[#020202] leading-[28px]">
+            "Выгодный"
+          </p>
+          <div class="flex flex-col gap-1">
+            <p class="text-[17px] font-bold text-[#020202] leading-none">
+              1500 ₽ / 12 месяцев
+            </p>
+            <p
+              class="text-[17px] font-normal text-[rgba(2,2,2,0.5)] leading-none"
+            >
+              125р. в месяц
+            </p>
+          </div>
+        </div>
+        <button
+          class="w-full h-[45px] flex items-center justify-center rounded-lg bg-white border border-[rgba(2,2,2,0.7)] text-base font-medium text-[rgba(2,2,2,0.7)] leading-6 cursor-pointer hover:bg-[rgba(2,2,2,0.5)] hover:text-white transition-all duration-200"
+        >
+          Активен
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

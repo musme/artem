@@ -26,3 +26,5 @@
 - [Профиль](https://musme.github.io/artem/mobile/profile.html)
 
 - [Как пользоваться](https://musme.github.io/artem/mobile/usage.html)
+
+- [Тарифы](https://musme.github.io/artem/mobile/plan.html)
