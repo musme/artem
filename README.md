@@ -30,3 +30,5 @@
 - [Тарифы](https://musme.github.io/artem/mobile/plan.html)
 
 - [Платежи](https://musme.github.io/artem/mobile/payments.html)
+
+- [Поддержка](https://musme.github.io/artem/mobile/support.html)

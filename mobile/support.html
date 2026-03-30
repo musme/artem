@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поддержка — Твой VPS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&subset=cyrillic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[#f0f2f5] font-['Manrope',sans-serif] min-h-screen flex justify-center"
+  >
+    <div class="w-full max-w-[400px] flex flex-col gap-4 px-4 pt-4">
+      <!-- Header: Назад + Поддержка -->
+      <div class="flex items-center px-2 py-1.5 rounded-lg">
+        <a
+          href="/artem/mobile/home.html"
+          class="shrink-0 cursor-pointer no-underline"
+        >
+          <svg
+            class="w-5 h-5"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.125 15.833L7.29167 10L13.125 4.16667"
+              stroke="#010101"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <p
+          class="flex-1 text-base font-medium text-[#010101] text-center leading-[22px]"
+        >
+          Поддержка
+        </p>
+        <div class="w-5"></div>
+      </div>
+
+      <!-- Card: Нужна помощь? -->
+      <div
+        class="bg-white rounded-[4px] shadow-[1px_1px_5px_0px_rgba(0,0,0,0.1)] p-6 flex flex-col"
+      >
+        <div class="flex items-center py-1">
+          <p class="text-[30px] font-bold text-[#020202] leading-none">
+            Нужна помощь?
+          </p>
+        </div>
+
+        <div class="flex items-start py-6">
+          <p
+            class="text-base font-semibold text-[#020202] tracking-[0.64px] leading-[1.32]"
+          >
+            Свяжитесь с нами, мы всегда рады помочь!
+          </p>
+        </div>
+
+        <button
+          class="w-full h-[45px] flex items-center justify-center rounded-lg bg-white border border-[rgba(2,2,2,0.7)] text-base font-medium text-[rgba(2,2,2,0.7)] leading-6 cursor-pointer hover:border-[#020202] hover:text-[#020202] transition-all duration-200"
+        >
+          Написать
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
